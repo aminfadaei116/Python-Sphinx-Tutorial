@@ -20,12 +20,13 @@
 Our directory tree looks as the following
 ```
 .
-├── docs
-└── src
-    ├── main
-    │   ├── __init__.py
-    │   └── function1.py
-    └── test
+├── ProjectName
+    ├── docs
+    └── src
+        ├── main
+        │   ├── __init__.py
+        │   └── function1.py
+        └── test
 ```
 
 
@@ -40,12 +41,12 @@ conda install -c conda-forge sphinx_rtd_theme
 
 
 # Step 2
-Go to the docs directory and add this command.
+Go to the `docs` directory and add this command.
 ```
 sphinx-quickstart
 ```
 After that it will ask you 4 questions:
-- Separate source and build directories (y/n) [n]: (default)
+- `Separate source and build directories (y/n) [n]:` (default)
 - Project name:
 - Author names(s):
 - Project release []: 
