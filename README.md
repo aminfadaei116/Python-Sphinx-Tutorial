@@ -1,5 +1,34 @@
 # python-package-sphinx-template
 
+<!-- For future purposes
+.
+├── dir1
+│   ├── file11.ext
+│   └── file12.ext
+├── dir2
+│   ├── file21.ext
+│   ├── file22.ext
+│   └── file23.ext
+├── dir3
+├── file_in_root.ext
+└── README.md
+-->
+
+
+# Step 0
+
+Our directory tree looks as the following
+```
+.
+├── docs
+└── src
+    ├── main
+    │   ├── __init__.py
+    │   └── function1.py
+    └── test
+```
+
+
 
 # Step 1
 First install the required pakages, where I am using conda
