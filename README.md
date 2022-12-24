@@ -19,7 +19,7 @@ After that it will ask you 4 questions:
 > Separate source and build directories (y/n) [n]: n
 > Project name:
 > > Author names(s):
-> > 
+> > Project release []: 
 
 # Step 3
 ```
