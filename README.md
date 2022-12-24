@@ -16,6 +16,14 @@ Go to the docs directory and add this command.
 sphinx-quickstart
 ```
 After that it will ask you 4 questions:
+- Separate source and build directories (y/n) [n]: (default)
+- Project name:
+- Author names(s):
+- Project release []: 
+- Project language [en]: (default)
+
+It is important to have the first question as default because it will change the address
+
 > Separate source and build directories (y/n) [n]: n
 > Project name:
 > > Author names(s):
