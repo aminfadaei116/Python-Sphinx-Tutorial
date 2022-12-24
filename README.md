@@ -102,4 +102,8 @@ html_theme = 'sphinx_rtd_theme'
 
 Now go to the `index.rst` and add `.. include:: Documents.rst`  below the `..toctree::`.
 
+# Step 7
+
+In the end go to `Project\docs\` and run `make html`.
+
 
