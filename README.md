@@ -28,7 +28,7 @@ The directory distribution looks like this:
         
 ```
 
-In the `__init__.py` and `function1.py` there should be some code with proper comments.
+In the `__init__.py` and `Functions.py` there should be some code with proper comments. You can clone my repository for sample.
 
 # Step 1
 First install the required pakages, where I am using conda
@@ -54,7 +54,7 @@ After that it will ask you 4 questions:
 It is important to have the first question as default, different answers will cause error.
 
 # Step 3
-Go out of the `docs` folder (currently in `\ProjectName\` directory) and use this command.
+Go out of the `ProjectName\docs` and use this command.
 ```
 sphinx-apidoc -o output_dir source_dir
 ```
@@ -63,7 +63,7 @@ which in our case we will use:
 ```
 sphinx-apidoc -o docs src/
 ```
-In our case the output was:
+The output is going to look something like this this:
 ```
 Creating file docs\main.rst.
 Creating file docs\modules.rst.
@@ -81,7 +81,7 @@ Add `src.` to the begining of the `.. automodule::` variable.
 ```
 
 # Step 5
-Go to the `conf.py` and uncomment the imports and add the following import
+Go to the `ProjectName\docs\conf.py` and uncomment the imports and add the following import
 ```
 import os
 import sys
@@ -105,10 +105,14 @@ html_theme = 'sphinx_rtd_theme'
 
 # Step 6
 
-Now go to the `index.rst` and add `.. include:: main.rst`  below the `..toctree::`.
+Now go to the `ProjectName\docs\index.rst` and add `.. include:: main.rst`  below the `..toctree::`.
 
 # Step 7
 
 In the end go to `Project\docs\` and run `make html`.
+
+# Step 8
+
+Congratulations! You are all done. Check `ProjectName\docs\_build\html\index.html` is your html file.
 
 
