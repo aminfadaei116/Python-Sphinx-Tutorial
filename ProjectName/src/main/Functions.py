@@ -35,11 +35,10 @@ def createMask(keys, height, width, img=None):
 
 def TransformKeys(keys, euler, T):
     """
-    This will create a mask which only has value at the keypoint locations
+    This function will apply 3D transformation over the keypoints
     :param keys: torch.tensor
-    :param height: int
-    :param width: int
-    :param img: torch.tensor
+    :param euler: torch.tensor
+    :param T: torch.tensor
     """
     R = torch.linalg.multi_dot((Rx(euler[0]), Ry(euler[1]), Rz(euler[2])))
     center = torch.mean(keys, dim=0)
