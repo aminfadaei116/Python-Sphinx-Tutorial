@@ -16,7 +16,8 @@ class MyNet(object):
     """Network Class made of several conv layers followed by RelU activation function"""
     def __init__(self, first_layer, last_layer):
         """
-        This is creating the network model based on parameters
+        This is creating the network model based on parameters.
+
         :param in_channels: int
         :param out_channels: int
         :param kernel_size: int
@@ -40,7 +41,8 @@ class MyNet(object):
 
     def forward(self, x):
         """
-        This method will return the output of the network after we passed an input
+        This method will return the output of the network after we passed an input.
+        
         :return: torch.tensor
         """
         return self.layers(x)

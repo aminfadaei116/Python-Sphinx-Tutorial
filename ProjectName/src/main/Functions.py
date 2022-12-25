@@ -16,11 +16,13 @@ import cv2
 
 def createMask(keys, height, width, img=None):
     """
-    This will create a mask which only has value at the keypoint locations
+    This will create a mask which only has value at the keypoint locations.
+
     :param keys: torch.tensor
     :param height: int
     :param width: int
     :param img: torch.tensor
+    :return: torch.tensor
     """
     if img != None:
       newImg = img.clone().detach().to(DEVICE)
@@ -35,10 +37,12 @@ def createMask(keys, height, width, img=None):
 
 def TransformKeys(keys, euler, T):
     """
-    This function will apply 3D transformation over the keypoints
+    This function will apply 3D transformation over the keypoints.
+    
     :param keys: torch.tensor
     :param euler: torch.tensor
     :param T: torch.tensor
+    :return: torch.tensor
     """
     R = torch.linalg.multi_dot((Rx(euler[0]), Ry(euler[1]), Rz(euler[2])))
     center = torch.mean(keys, dim=0)

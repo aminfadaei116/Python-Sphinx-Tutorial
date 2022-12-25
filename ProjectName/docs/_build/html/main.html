@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>main package &mdash; NetworkModel 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> NetworkModel
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">main package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-src.main.Functions">main.Functions module</a><ul>
+<li><a class="reference internal" href="#functions-script">Functions Script</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-src.main">Module contents</a><ul>
+<li><a class="reference internal" href="#neuralnetworkmodule">NeuralNetworkModule</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">NetworkModel</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">main package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/main.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="main-package">
+<h1>main package<a class="headerlink" href="#main-package" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-src.main.Functions">
+<span id="main-functions-module"></span><h2>main.Functions module<a class="headerlink" href="#module-src.main.Functions" title="Permalink to this headline"></a></h2>
+<section id="functions-script">
+<h3>Functions Script<a class="headerlink" href="#functions-script" title="Permalink to this headline"></a></h3>
+<p>This is the needed function for our process</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="src.main.Functions.TransformKeys">
+<span class="sig-prename descclassname"><span class="pre">src.main.Functions.</span></span><span class="sig-name descname"><span class="pre">TransformKeys</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keys</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">euler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">T</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/main/Functions.html#TransformKeys"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.main.Functions.TransformKeys" title="Permalink to this definition"></a></dt>
+<dd><p>This function will apply 3D transformation over the keypoints.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>keys</strong> – torch.tensor</p></li>
+<li><p><strong>euler</strong> – torch.tensor</p></li>
+<li><p><strong>T</strong> – torch.tensor</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>torch.tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.main.Functions.createMask">
+<span class="sig-prename descclassname"><span class="pre">src.main.Functions.</span></span><span class="sig-name descname"><span class="pre">createMask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keys</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">img</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/main/Functions.html#createMask"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.main.Functions.createMask" title="Permalink to this definition"></a></dt>
+<dd><p>This will create a mask which only has value at the keypoint locations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>keys</strong> – torch.tensor</p></li>
+<li><p><strong>height</strong> – int</p></li>
+<li><p><strong>width</strong> – int</p></li>
+<li><p><strong>img</strong> – torch.tensor</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>torch.tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+<section id="module-src.main">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-src.main" title="Permalink to this headline"></a></h2>
+<section id="neuralnetworkmodule">
+<h3>NeuralNetworkModule<a class="headerlink" href="#neuralnetworkmodule" title="Permalink to this headline"></a></h3>
+<p>This is our Network model</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.main.MyNet">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">src.main.</span></span><span class="sig-name descname"><span class="pre">MyNet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">first_layer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_layer</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/main.html#MyNet"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.main.MyNet" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Network Class made of several conv layers followed by RelU activation function</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.main.MyNet.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/main.html#MyNet.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.main.MyNet.forward" title="Permalink to this definition"></a></dt>
+<dd><p>This method will return the output of the network after we passed an input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>torch.tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Amin Fadaeinejad.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
