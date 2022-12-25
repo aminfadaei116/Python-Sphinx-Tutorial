@@ -15,9 +15,8 @@
 -->
 
 
-# Step 0
 
-We have a directory that looks like this:
+The directory distribution looks like this:
 ```
 .
 ├── ProjectName
