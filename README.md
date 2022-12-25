@@ -1,4 +1,4 @@
-# python-package-sphinx-template
+# Python-Sphinx-Tutorial
 
 <!-- For future purposes
 .
