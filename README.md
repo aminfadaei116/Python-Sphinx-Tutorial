@@ -40,7 +40,7 @@ conda install -c conda-forge sphinx_rtd_theme
 
 
 # Step 2
-Go to the `docs` directory and add this command.
+Go to the `ProjectName\docs` directory and add this command.
 ```
 sphinx-quickstart
 ```
@@ -63,16 +63,20 @@ which in our case we will use:
 ```
 sphinx-apidoc -o docs src/
 ```
-
+In our case the output was:
+```
+Creating file docs\main.rst.
+Creating file docs\modules.rst.
+```
 
 # Step 4
-Now go to the docs directory and open the project name directory (in our case it is called `Documents.rst`)
+Now go to the `ProjectName\docs` directory and open the project name directory (in our case it is called `main.rst`)
 
 Add `src.` to the begining of the `.. automodule::` variable.
 
 ```
-.. automodule:: src.Documents
-.. automodule:: src.Documents.function1
+.. automodule:: src.main
+.. automodule:: src.main.Functions
 
 ```
 
@@ -84,6 +88,8 @@ import sys
 sys.path.insert(0, os.path.abspath('..'))
 import src.main
 ```
+Make sure the replace `sys.path.insert(0, os.path.abspath('.'))` with `sys.path.insert(0, os.path.abspath('..'))`. There should be two dots in the `os.path.abspath()` input.
+
 You also need to modify the `extensions` and `html_theme` as.
 ```
 extensions = [
@@ -99,7 +105,7 @@ html_theme = 'sphinx_rtd_theme'
 
 # Step 6
 
-Now go to the `index.rst` and add `.. include:: Documents.rst`  below the `..toctree::`.
+Now go to the `index.rst` and add `.. include:: main.rst`  below the `..toctree::`.
 
 # Step 7
 
