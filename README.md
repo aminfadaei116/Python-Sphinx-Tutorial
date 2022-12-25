@@ -24,7 +24,7 @@ The directory distribution looks like this:
     └── src
         ├── main
         │   ├── __init__.py
-        │   └── function1.py
+        │   └── Functions.py
         └── test
 ```
 
