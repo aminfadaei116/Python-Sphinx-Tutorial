@@ -1,7 +1,7 @@
 """
 NeuralNetworkModule
 ----------------------
-This is a Module which has the network model in it
+This is our Network model
 """
 
 import numpy as np
@@ -13,7 +13,7 @@ import torch.nn.functional as F
 import cv2
 
 class MyNet(object):
-    """Database Class which is responsile for connecting to databse """
+    """Network Class made of several conv layers followed by RelU activation function"""
     def __init__(self, first_layer, last_layer):
         """
         This is connection string o connect to sql server
