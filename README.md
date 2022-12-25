@@ -22,10 +22,10 @@ The directory distribution looks like this:
 ├── ProjectName
     ├── docs
     └── src
-        ├── main
-        │   ├── __init__.py
-        │   └── Functions.py
-        └── test
+        └── main
+            ├── __init__.py
+            └── Functions.py
+        
 ```
 
 In the `__init__.py` and `function1.py` there should be some code with proper comments.
